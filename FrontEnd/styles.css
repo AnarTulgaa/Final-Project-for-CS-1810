@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("Pictures/firstPageBackground.png");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.512);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container:hover {
+      background-color: rgba(63, 63, 63, 0.619);
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-family: oblique;
+    color: #591010;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  button {
+      padding: 15px 30px;
+      font-size: 18px;
+      font-family: italic;
+      background-color: #421e1e;
+      color: #eee9e951;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+  button:hover {
+    background-color: #00000069;
+  }
+  
+  .privacyCheckbox {
+    color: rgb(161, 153, 153);
+  }
+  
+  p {
+    font-size: 20px;
+    color: #591010;
+    font-family: Cursive;
+    margin-top: 30px;
+  }
+  
+  #privacyPolicy {
+    margin-top: 20px;
+  }
+  
+  #privacyCheckbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  label {
+    font-size: 16px;
+    vertical-align: middle;
+  }
+  

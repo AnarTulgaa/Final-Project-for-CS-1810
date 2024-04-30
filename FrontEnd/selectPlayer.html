@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empire Combat - Select Players</title>
+    <link rel="stylesheet" href="selectPlayers.css" />
+    <script src="./JavaScript/SelectPlayers.js" type="module"></script>
+  </head>
+  <body>
+    <div>E M P I R E || C O M B A T</div>
+    <h1>Welcome to Player Selection</h1>
+    <div id="menu">
+      <label for="player1Name">Player 1 Name:</label>
+      <input
+        type="text"
+        id="player1Name"
+        placeholder="Enter Player 1's Name"
+      /><br />
+
+      <label for="player2Name">Player 2 Name:</label>
+      <input
+        type="text"
+        id="player2Name"
+        placeholder="Enter Player 2's Name"
+      /><br />
+
+      <div class="player-card droppable" id="player1Card">
+        <h2>Player 1</h2>
+        <div id="player1Hero" class="hero-container droppable">
+          <p>Drag Hero Here</p>
+        </div>
+      </div>
+
+      <div class="player-card droppable" id="player2Card">
+        <h2>Player 2</h2>
+        <div id="player2Hero" class="hero-container droppable">
+          <p>Drag Hero Here</p>
+        </div>
+      </div>
+      <h2 class="hero-list">Hero List</h2>
+      <div id="heroList">
+        <div></div>
+        <div class="hero-card draggable" draggable="true" id="Viking">
+          <img src="Pictures/viking.jpg" alt="Viking" draggable="false"/>
+          <p>Viking</p>
+        </div>
+        <div class="hero-card draggable" draggable="true" id="Spartan">
+          <img src="Pictures/spartan.jpg" alt="Spartan" draggable="false"/>
+          <p>Spartan</p>
+        </div>
+        <div class="hero-card draggable" draggable="true" id="MongolWarrior">
+          <img src="Pictures/mongolWarrior.jpg" alt="MongolWarrior" draggable="false" />
+          <p>MongolWarrior</p>
+        </div>
+        <div class="hero-card draggable" draggable="true" id="Samurai">
+          <img src="Pictures/samurai.jpg" alt="Samurai" draggable="false" />
+          <p>Samurai</p>
+        </div>
+        <div class="hero-card draggable" draggable="true" id="AssasinOfPersia">
+          <img src="Pictures/assassin.jpg" alt="AssassinOfPersia" draggable="false" />
+          <p>AssassinOfPersia</p>
+        </div>
+      </div>
+
+      <label for="environmentSelect">Select Environment:</label>
+      <select id="environmentSelect">
+        <option value="Dark">Dark</option>
+        <option value="Sunny">Sunny</option>
+        <option value="Castle">Castle</option></select
+      ><br />
+
+      <button id="resetBtn">Reset Selection</button>
+      <!-- <a href="gamePlay.html"><button id="startGameBtn">Continue</button></a> -->
+      <button id="startGameBtn">Continue</button>
+      <button id="returnBtn">Return to Main Menu</button>
+    </div>
+  </body>
+</html>
